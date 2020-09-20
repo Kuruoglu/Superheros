@@ -27,6 +27,15 @@ DB_DATABASE=your DB
 DB_USERNAME=youe user
 DB_PASSWORD=your password
 ```
+- Для генерации ключа запустите команду
+```bash
+php artisan key:generate
+```
+
+- Запустить скрипт генерации таблиц БД
+```bash
+php artisan migrate
+```
 - Также можно получить одного дефолтного супергероя используя отдельную команду
 ```bash
 php artisan db:seed
@@ -34,10 +43,6 @@ php artisan db:seed
 - Или вместе с выполнением миграции
 ```bash
 php artisan migrate --seed
-```
-- Запустить скрипт генерации таблиц БД
-```bash
-php artisan migrate
 ```
 - Запустить веб-сервер
 ```bash
