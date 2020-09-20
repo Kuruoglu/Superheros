@@ -13,8 +13,27 @@ cd Superheros
 ```bash
 composer install
 ```
-- Настроить подключение к MySQL базе данных в файле **app/config/database.php**
+- Скопировать.env.example используя команду 
+```bash
+copy .env.example .env
+```
 - Создать базу данных приложения
+- Настроить подключение к MySQL базе данных в файле **app/config/database.php**
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your DB
+DB_USERNAME=youe user
+DB_PASSWORD=your password
+```
+- Также можно получить одного дефолтного супергероя используя отдельную команду
+```bash
+php artisan db:seed
+```
+- Или вместе с выполнением миграции
+```bash
+php artisan migrate --seed
 ```
 - Запустить скрипт генерации таблиц БД
 ```bash
