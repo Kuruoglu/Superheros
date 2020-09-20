@@ -9,9 +9,10 @@
 git clone https://github.com/Kuruoglu/Superheros.git
 cd Superheros
 ```
-- Установить все зависимости приложения через [Composer](https://getcomposer.org/)
+- Установить все зависимости приложения через [Composer](https://getcomposer.org/) и npm 
 ```bash
 composer install
+npm install
 ```
 - Скопировать.env.example используя команду 
 ```bash
